@@ -10,9 +10,13 @@ $(document).ready(function() {
 		
 		for(var i = smallNumber; i <= bigNumber; i += smallNumber) {
 			$("#results").append(i + ", ");
-		}
-		if (bigNumber === " " || smallNumber === " ") {
-      alert("You're missing a number!");
-    }
+    
+    //   if (bigNumber === " " || smallNumber === " ") {
+    //     alert("You're missing a number!");
+    //   } else if (isNaN(bigNumber) || isNaN(smallNumber) {
+    //     alert("please enter a NUMBER");
+    //   } else {
+    //     $("results").append(i + ", ");
+    // }
 	});
 });
