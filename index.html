@@ -5,21 +5,29 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Document</title>
+    <title>Fortune Teller</title>
   </head>
   <body>
     <div class="container">
-      <form id="twoNumbers">
-        <label for="countUp">Enter a number to count UP to:</label>
-        <input type="text" id="countUp" class="form-control">
-
-        <label for="multiple">Enter a number to count BY:</label>
-        <input type="text" id="multiple" class="form-control">
-
-        <button type="submit" id="go" class="btn btn-success">Let's count!</button>
+      <form id="superstitions">
+        <div class="form-group">
+          <p>I have recently experienced these unlucky occurances:</p>
+          <input type="checkbox" name="unlucky" value="1">Seen a black cat<br>
+          <input type="checkbox" name="unlucky" value="1">Walked under a ladder<br>
+          <input type="checkbox" name="unlucky" value="1">Talked to a goblin<br>
+          <input type="checkbox" name="unlucky" value="1">Made a deal with Rumplestilskin<br>
+        </div><!--formgroup-->
+        <div class="form-group">
+          <p>I have recently experienced these lucky occurances:</p>
+          <input type="checkbox" name="lucky" value="1">Found surprise money in my pocket<br>
+          <input type="checkbox" name="lucky" value="1">Spotted a "heads up" penny<br>
+          <input type="checkbox" name="lucky" value="1">Had a wish granted by a fairy<br>
+          <input type="checkbox" name="lucky" value="1">Caught a falling star in the palm of your hand<br>
+        </div>
+        <button type="submit" id="prophecy" class="btn btn-primary">Reveal my fortune!</button>
       </form>
 
-      <div id="results">
+      <div id="fortune">
 
       </div>
 
